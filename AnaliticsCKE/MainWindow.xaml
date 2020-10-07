@@ -5,9 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AnaliticsCKE"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="CKE PDF for Education Worker" Height="450" Width="800">
     <Grid HorizontalAlignment="Left" Height="415" VerticalAlignment="Top" Width="790">
-        <TextBox x:Name="PathOfPDF" HorizontalAlignment="Left" Height="23" Margin="79,49,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="625"/>
-        <Button x:Name="TakeFileButton" Content="Przeglądaj..." HorizontalAlignment="Left" Margin="345,89,0,0" VerticalAlignment="Top" Width="110" Click="Button_Click" Height="31"/>
+        <TextBox x:Name="PathOfPDF" HorizontalAlignment="Left" Height="23" Margin="79,49,0,0" VerticalAlignment="Top" Width="625"/>
+        <Button x:Name="TakeFileButton" Content="Przeglądaj..." HorizontalAlignment="Left" Margin="345,89,0,0" VerticalAlignment="Top" Width="110" Click="Set_File_Button_Click" Height="31"/>
+        <Label Content="Wybierz plik CKE OKE  (*.PDF)" HorizontalAlignment="Left" Margin="79,23,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="Analyze" Content="START" HorizontalAlignment="Left" Margin="345,135,0,0" VerticalAlignment="Top" Width="110" Click="Start_Button_Click" Height="31" IsEnabled="False"/>
     </Grid>
 </Window>
